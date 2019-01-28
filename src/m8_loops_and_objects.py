@@ -20,7 +20,7 @@ def main():
     print_sequence2(0, 18)
     #draw_circles2()
     print_sequence3()
-    draw_circles3()
+    #draw_circles3()
 
 
 def print_sequence1(n):
@@ -172,7 +172,7 @@ def draw_circles3():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement this function, per its doc-string above.
+    # DONE: 7. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # -------------------------------------------------------------------------
@@ -182,7 +182,8 @@ def draw_circles3():
     print('--------------------------------------------------')
     window=rg.RoseWindow(300,300)
     for k in range (100):
-        circle=rg.Circle((200,200), k+1)
+        circle=rg.Circle(rg.Point(200,150), k+1)
+        circle.attach_to(window)
         window.render()
     window.close_on_mouse_click()
 
