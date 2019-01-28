@@ -6,8 +6,8 @@ This module demonstrates simple LOOPS of the form:
 and also USING OBJECTS.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Emily Macak.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -15,9 +15,9 @@ import rosegraphics as rg
 def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
+    print (print_sequence1(21))
 
-
-def print_sequence1():
+def print_sequence1(n):
     """
     Prints:
        0
@@ -37,6 +37,11 @@ def print_sequence1():
     print('--------------------------------------------------')
     print('Running print_sequence1:')
     print('--------------------------------------------------')
+    total = 0
+    for k in range (n):
+        total = k*10
+        print(total)
+
 
 
 def draw_circles1():
