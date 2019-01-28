@@ -15,8 +15,9 @@ import rosegraphics as rg
 def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
-    print (print_sequence1(21));
-    print(print_sequence2(0, 18))
+    print_sequence1(21)
+    draw_circles1()
+    print_sequence2(0, 18)
 
 
 def print_sequence1(n):
@@ -31,7 +32,7 @@ def print_sequence1(n):
        200
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this function, per its doc-string above.
+    # DONE: 2. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # -------------------------------------------------------------------------
@@ -64,7 +65,16 @@ def draw_circles1():
     print('--------------------------------------------------')
     print('Running draw_circles1:  See graphics window')
     print('--------------------------------------------------')
-
+    window = rg.RoseWindow(400,400)
+    circle=rg.Circle(rg.Point(200,200), 0)
+    circle.attach_to(window)
+    window.render()
+    for k in range (21):
+        circle=rg.Circle((rg.Point(200,200)), k*10)
+        circle.attach_to(window)
+        window.render()
+    window.close_on_mouse_click();
+    #print(circle)
 
 
 def print_sequence2(n, m):
