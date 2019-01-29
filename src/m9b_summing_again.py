@@ -7,7 +7,6 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
          Aaron Wilkin, their colleagues, and Emily Macak.
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
-
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_sum_powers()
