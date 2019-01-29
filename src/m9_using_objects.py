@@ -101,8 +101,8 @@ def circle_and_rectangle():
     print(rectangle.outline_thickness)
     print(rectangle.fill_color)
     print(rectangle.get_center())
-    print(rectangle.get_center.x)
-    print(rectangle.get_center.y)
+    print(rectangle.get_center().x)
+    print(rectangle.get_center().y)
 
 
 
