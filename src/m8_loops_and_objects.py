@@ -243,7 +243,7 @@ def draw_cosines_and_sines():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # -------------------------------------------------------------------------
-    # TODO: 9. Implement this function, per its doc-string above.
+    # DONE: 9. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # -------------------------------------------------------------------------
@@ -253,10 +253,12 @@ def draw_cosines_and_sines():
     print('--------------------------------------------------')
     import math
     window = rg.RoseWindow(400,400)
-    circle=rg.Circle(rg.Point(200 + x , 200 + y) , 10)
-    x= for k in range(101)
-        80*math.cos(k)
-    #window.render()
+    for k in range(101):
+        q = 200 + 80*math.cos(k)
+        w = 200 + 80*math.sin(k)
+        circle=rg.Circle(rg.Point(q, w), 10)
+        circle.attach_to(window)
+        window.render()
     window.close_on_mouse_click()
 
 
