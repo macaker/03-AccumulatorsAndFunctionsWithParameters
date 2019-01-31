@@ -6,7 +6,10 @@ This module demonstrates simple LOOPS of the form:
 and also USING OBJECTS.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and Emily Macak.
+         Aaron Wilkin, their colleagues, les1()
+    print_sequence2(0, 18)
+    draw_circles2()
+    print_seand Emily Macak.
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
@@ -16,10 +19,7 @@ def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
     print_sequence1(21)
-    draw_circles1()
-    print_sequence2(0, 18)
-    draw_circles2()
-    print_sequence3()
+    draw_circquence3()
     draw_circles3()
     print_cosines()
     draw_cosines_and_sines()
